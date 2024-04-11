@@ -1,0 +1,54 @@
+.table-container {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f8f9fa; /* Cambia esto al color que prefieras para el fondo de la tabla */
+  }
+  
+  .table-row:nth-child(even) {
+    background-color: #e9ecef; /* Cambia esto al color que prefieras para las filas pares */
+  }
+  
+  .table-row:nth-child(odd) {
+    background-color: #dee2e6; /* Cambia esto al color que prefieras para las filas impares */
+  }
+  
+  .table-cell {
+    border: 1px solid #ced4da; /* Cambia esto al color que prefieras para los bordes de las celdas */
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .listado-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .table-icon {
+    width: 40px;
+  }
+
+  .table-row th {
+    background-color: peru; /* Cambia esto al color que prefieras */
+    color: white; /* Cambia esto al color que prefieras para el texto */
+  }
+
+
+.formulario-button {
+    /* Cambia esto al color que prefieras para el botón de guardar cambios */
+    background-color: #28a745; 
+    color: white;
+  }
+  
+  .formulario-button[type="button"] {
+    /* Cambia esto al color que prefieras para el botón de cancelar */
+    background-color: #dc3545; 
+    color: white;
+  }
+  
+
+.formulario-title {
+    /* Cambia esto al color que prefieras para el texto "Editar Animal" */
+    color: black; 
+  }
+  

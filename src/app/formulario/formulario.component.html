@@ -1,0 +1,17 @@
+<div class="formulario-container">
+    <h2 class="formulario-title">Ingreso de Mascotas</h2>
+    <form (ngSubmit)="guardar()">
+        <label for="nombre" class="formulario-label">Nombre:</label>
+        <input class="formulario-input" type="text" id="nombre" [(ngModel)]="nombre" name="nombre" required>
+
+        <label for="raza" class="formulario-label">Raza:</label>
+        <select class="formulario-input" id="raza" [(ngModel)]="raza" name="raza" required>
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            <option value="ave">Ave</option>
+            <option value="pez">Pez</option>
+        </select>
+
+        <button class="formulario-button" type="submit">Guardar</button>
+    </form>
+</div>

@@ -1,0 +1,50 @@
+<div class="listado-container">
+    <table class="table-container">
+        <tr class="table-row">
+            <th class="table-cell">Raza</th>
+            <th class="table-cell">Nombre</th>
+            <th class="table-cell">Editar</th>
+            <th class="table-cell">Borrar</th>
+        </tr>
+        @for (animal of animales; track animal.id) {
+        <tr class="table-row">
+            <td class="table-cell">
+                <img src="assets/{{ animal.raza }}.png" alt="{{ animal.raza }}" class="table-icon">
+            </td>
+            <td class="table-cell">{{ animal.nombre }}</td>
+            <td class="table-cell">
+                <button class="listado-button" (click)="editar(animal.id)">
+                    <img src="assets/editar.png" alt="Editar" class="table-icon">
+                </button>
+            </td>
+            <td class="table-cell">
+                <button class="listado-button" (click)="borrar(animal.id)">
+                    <img src="assets/borrar.png" alt="Borrar" class="table-icon">
+                </button>
+            </td>
+        </tr>
+        }
+    </table>
+
+
+    @if (mostrarFormularioEdicion && animalEditando) {
+    <h2 class="formulario-title">Editar Mascota</h2>
+    <form (ngSubmit)="guardarEdicion()">
+        <label for="nombre" class="formulario-label">Nombre:</label>
+        <input class="formulario-input" type="text" id="nombre" [(ngModel)]="animalEditando.nombre" name="nombre"
+            required>
+
+        <label for="raza" class="formulario-label">Raza:</label>
+        <select class="formulario-input" id="raza" [(ngModel)]="animalEditando.raza" name="raza" required>
+            <option value="ave">Ave</option>
+            <option value="gato">Gato</option>
+            <option value="perro">Perro</option>
+            <option value="pez">Pez</option>
+        </select>
+
+        <button class="formulario-button" style="margin-right: 10px;" type="submit">Guardar</button>
+        <button class="formulario-button" type="button" (click)="cancelarEdicion()">Cancelar</button>
+    </form>
+    }
+
+</div>

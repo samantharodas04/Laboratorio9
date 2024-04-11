@@ -1,0 +1,36 @@
+.formulario-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    margin: auto;
+  }
+  
+  .formulario-title {
+    text-align: center;
+    color: #6c757d;
+  }
+  
+  .formulario-label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .formulario-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+  }
+  
+  .formulario-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+  }
+  
